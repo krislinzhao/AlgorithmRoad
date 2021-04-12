@@ -24,7 +24,7 @@ import java.util.*;
  */
 public class Question03 {
 
-    public static int[] arrayRepeatedNumbers(int[] array) {
+    public static int[] findRepeatNumber01(int[] array) {
         List<Integer> result = new ArrayList<>();
         /**
          * key:    数组中的数字
@@ -49,7 +49,7 @@ public class Question03 {
 
     public static void main(String[] args) {
         int[] array = {2, 3, 1, 0, 2, 5, 3};
-        int[] repeatedNumbers = arrayRepeatedNumbers(array);
+        int[] repeatedNumbers = findRepeatNumber01(array);
 
         Arrays.stream(repeatedNumbers).forEach(System.out::println);
     }
